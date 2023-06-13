@@ -1,0 +1,13 @@
+name: my test workflow 
+on: workflow_dispatch
+jobs:
+  firstjob: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: install git 
+        run: sudo apt install git -y
+      - name: check for the git version 
+        run: git --version
+
+
+
