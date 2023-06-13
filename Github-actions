@@ -3,4 +3,33 @@ some gits commands:
 
  that would move commits to another branch 
 
- 
+you can do a git checkout main to go back to your full histroy. 
+
+git revert: "used to undo a commit"
+
+we can make use of git revert : it takes a look at the commit and creates a new commit that undoes that commit. 
+
+git revert  "commit id"
+
+it keeps the history of the commits and does't delete.
+
+git reset hard "commitid"
+
+git branches : This is the most important aspect of commits and it would server as an area where u can make ur feature changes without impacting your main code. 
+
+Branches would make u not to interfer with other commits. 
+
+git branch branchname --->> would create a branch 
+
+git checkout -b would create a branch and checkout to it. 
+
+git branch -D would delete the branch. you have to make sure you are not in the branch. 
+
+
+
+
+
+
+
+
+
