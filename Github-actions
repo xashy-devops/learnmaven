@@ -25,6 +25,14 @@ git checkout -b would create a branch and checkout to it.
 
 git branch -D would delete the branch. you have to make sure you are not in the branch. 
 
+working locally with git is not good because collegues wont see what you are doing.
+
+if somwthing happens to your code you wont be able to access it. 
+
+git checkout -b branchname would create the branch and checout to it. 
+
+
+
 
 
 
