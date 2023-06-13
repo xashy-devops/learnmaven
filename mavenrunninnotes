@@ -1,0 +1,153 @@
+For maven to run on a server, the server should jdk1.8+ 
+
+
+maven installation: 
+### update your system 
+
+sudo yum update -y 
+
+## install git , wget , tree , unzip , 
+
+sudo yum install wget nano tree unzip git-all -y
+
+### install java 
+
+sudo yum install java-11-openjdk-devel java-1.8.0-openjdk-devel -y
+
+### install maven on the server 
+
+### use wget command to download maven. 
+sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.zip
+
+
+mvn --verion ======>> tells you your maven version. 
+
+
+XML                    project information: 
+
+< name > .            groupid: identity that you are given project                           organisation
+
+                    artifactid:  gives a unique identity for your project.
+                     
+                     version: version of the project 
+
+                     name : 
+
+                     description 
+
+               Project dependencies: 
+
+               lkist of dependencies that are required to build the project.
+
+               each dependency is going to have groupid, artifactid, version
+
+               build configuration: 
+
+               plugin: 
+
+               repository : 
+
+
+               local repository: 
+               repo:
+
+               Remote (Central repo)
+               
+
+               Properties : specify your custom 
+
+
+maven can create three of artifacts 
+
+jar:artifact thst represents standalone 
+
+Source code : is only Java code 
+Jar 
+
+app.jar  
+
+war : java web application 
+
+source code : JAVa + HTML 
+
+app.war
+
+EAR: Java Enterprise applications
+
+Mixtuure of different project modules
+
+.ear 
+
+
+Maven: 
+
+Goals :
+
+mvn validate : Validates the source code 
+
+mvn --clean : deletes the target direc
+
+mvn --compile: maven compiles the code 
+
+mvn --package : validate , compile the code , package the code to form an
+ artifact. stores the artifact in a target directory
+
+
+mvn install : validate , compile the code , package the code to form an
+ artifact. stores the artifact  In the maven local repository
+
+mvn -- clean package ===>>
+
+mvn --deploy =======> deploys the code to a code artifactory (Nessus , code )
+
+mvn sonar:sonar ======>> 
+
+
+mvn --test
+
+
+The maven repository is available in ~/.m2/repository
+
+
+
+
+
+
+
+
+</name >
+
+<project>
+
+
+
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#!/bin/bash 
+sudo yum update -y 
+sudo yum install java git-all wget tree unzip -y 
+cd /opt
+sudo wget 
+### use wget command to download maven. 
+sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.zip
+sudo unzip apache-maven-3.9.2-bin.zip
+sudo mv apache-maven-3.9.2 maven
+sudo echo "export M2_HOME=/opt/maven" ~/.bash_profile
+sudo echo "export PATH=$PATH:$M2_HOME/bin" ~/.bash_profile
+source ~/.bash_profile
