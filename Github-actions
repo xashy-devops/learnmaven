@@ -31,6 +31,18 @@ if somwthing happens to your code you wont be able to access it.
 
 git checkout -b branchname would create the branch and checout to it. 
 
+you can use a use a git pull to pull changes from the remote that doesnt exist on the local. 
+
+WHAT IS A PULL REQUEST: A request compares your your commit and and the current repository. 
+
+it request others to pull changes to the main branch. It request to review our code and the changes to the code. 
+we can then have people change what we have. 
+
+
+
+
+
+
 
 
 
